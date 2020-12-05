@@ -574,7 +574,7 @@ longing, we manage giving the best vehicle rental assistance in India. We accept
         </div>
 
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form" name="google-sheet">
             <div class="form-row">
               <div class="col-md-6 form-group">
                 <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -593,11 +593,11 @@ longing, we manage giving the best vehicle rental assistance in India. We accept
               <textarea class="form-control" name="Message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validate"></div>
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
+            </div> -->
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
@@ -663,11 +663,12 @@ longing, we manage giving the best vehicle rental assistance in India. We accept
       <div class="copyright">
         &copy; Copyright <strong><span>Krishnam Cab</span></strong>. All Rights Reserved
       </div>
-      
+
     </div>
   </footer>
   <!-- End Footer -->
 
+ <!-- booking form -->
   <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -745,7 +746,7 @@ longing, we manage giving the best vehicle rental assistance in India. We accept
                  </div>
 
                </form>
-               <!-- Form -->
+               <!-- booking Form -->
       </div>
 
     </div>
@@ -778,7 +779,7 @@ longing, we manage giving the best vehicle rental assistance in India. We accept
       .catch(error => console.error('Error!', error.message))
     });
   </script>
-  
+
 </body>
 
 </html>
